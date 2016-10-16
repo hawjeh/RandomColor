@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Random Color</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper container">
+    <h1>Random Color!</h1>
+    <div class="row">
+      <div class="col-xs-9">
+        <div class="box-wrapper">
+        </div>
+        <p>
+          * Press the color to view the color code <br/>
+          * Press 'P' to <span id="pauseStatus"></span> color changing
+        </p>
+      </div>
+      <div class="col-xs-3">
+        <h3>Color Table</h3>
+        <table class="table-hover color_table">
+          <tr>
+            <td style="width: 20%">Rgb</td>
+            <td style="width: 60%"><span class="color_code" id="color_rgb"></span></td>
+            <td style="width: 20%"><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Rgba</td>
+            <td><span class="color_code" id="color_rgba"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Hex</td>
+            <td><span class="color_code" id="color_hex"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Hsl</td>
+            <td><span class="color_code" id="color_hsl"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Hwb</td>
+            <td><span class="color_code" id="color_hwb"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Cmyk</td>
+            <td><span class="color_code" id="color_cmyk"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+          <tr>
+            <td>Ncol</td>
+            <td><span class="color_code" id="color_ncol"></span></td>
+            <td><button class="glyphicon glyphicon-copy copyColor"></button></td>
+          <tr/>
+        </table>
+      </div>
+    </div>
+    <div class="break">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="input-group">
+            <span class="input-group-addon">Table Rows</span>
+            <input type="text" class="form-control" placeholder="Row" id="rowNumber">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" id="SetRole">Apply</button>
+              <button class="btn btn-default" type="button" id="ResetColor">Reset</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./color_converter.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

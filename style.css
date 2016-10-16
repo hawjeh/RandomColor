@@ -1,0 +1,43 @@
+  body {
+    height: 100%;
+    background-color: black;
+  }
+  
+  .wrapper {
+    height: 80%;
+    color: orange;
+  }
+  
+  .box-wrapper {
+    padding: 0px;
+    background-color: grey;
+    border: 1px solid grey;
+  }
+  
+  .box {
+    height: 70px;
+  }
+  
+  .break {
+    margin-top: 30px;
+  }
+  
+  .form-control {
+    height: auto;
+  }
+  
+  #pauseStatus {
+    color: red;
+  }
+  
+  .color_table {
+    width: 100%;
+  }
+  
+  .color_table tr td {
+    cursor: pointer;
+  }
+  
+  .color_table tr:hover {
+    color: black;
+  }
