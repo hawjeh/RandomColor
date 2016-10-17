@@ -16,6 +16,7 @@ var getBoxHeight = function() {
 }
 
 var setColor = function(colorVal) {
+  $("#selected_color").css('background-color', colorVal);
   $('#color_rgb').html(w3color(colorVal).toRgbString());
   $('#color_rgba').html(w3color(colorVal).toRgbaString());
   $('#color_hex').html(w3color(colorVal).toHexString());

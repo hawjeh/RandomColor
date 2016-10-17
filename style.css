@@ -30,6 +30,13 @@
     color: red;
   }
   
+  #selected_color {
+    width: 240px;
+    height: 100px;
+    background-color: rgb(128, 128, 128);
+    margin-bottom: 10px;
+  }
+  
   .color_table {
     width: 100%;
   }

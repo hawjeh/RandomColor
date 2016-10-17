@@ -3,8 +3,11 @@
 
 <head>
   <title>Random Color</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -12,16 +15,21 @@
   <div class="wrapper container">
     <h1>Random Color!</h1>
     <div class="row">
-      <div class="col-xs-9">
-        <div class="box-wrapper">
+      <div class="col-md-9 col-sm-12">
+        <div class="col-xs-12">
+          <div class="box-wrapper">
+          </div>
         </div>
-        <p>
+        <div class="col-xs-12">
+          <p>
           * Press the color to view the color code <br/>
           * Press 'P' to <span id="pauseStatus"></span> color changing
-        </p>
+          </p>
+        </div>
       </div>
-      <div class="col-xs-3">
-        <h3>Color Table</h3>
+      <div class="col-md-3 col-sm-12">
+        <h3>Selected Color Table</h3>
+        <div id="selected_color"></div>
         <table class="table-hover color_table">
           <tr>
             <td style="width: 20%">Rgb</td>
