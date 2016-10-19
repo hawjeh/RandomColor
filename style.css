@@ -26,6 +26,12 @@
     height: auto;
   }
   
+  #pause-btn {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 6px;
+  }
+  
   #pauseStatus {
     color: red;
   }

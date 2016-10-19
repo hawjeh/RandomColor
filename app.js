@@ -78,18 +78,16 @@ var registerEvent = function() {
 }
 
 var registerPauseEvent = function() {
-  $('body').bind('keypress', function(event) {
-    if (event.keyCode == 112) {
-      running = !running;
-      if (running == false) {
-        registerOffBoxEvent();
-        $('#pauseStatus').html("Start");
-      } else {
-        registerOnBoxEvent();
-        $('#pauseStatus').html("Pause");
-      }
+  $(".box").dblclick(function() {
+    running = !running;
+    if (running == false) {
+      registerOffBoxEvent();
+      $('#pauseStatus').html("Start");
+    } else {
+      registerOnBoxEvent();
+      $('#pauseStatus').html("Pause");
     }
-  });
+  })
 
   $(".copyColor").click(function() {
     var $temp = $("<input>");
@@ -97,7 +95,7 @@ var registerPauseEvent = function() {
     $temp.val($(this).closest('td').prev('td').text()).select();
     document.execCommand("copy");
     $temp.remove();
-  })
+  });
 }
 
 $(document).ready(function() {
